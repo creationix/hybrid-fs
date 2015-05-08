@@ -1,8 +1,13 @@
 exports.name = "creationix/hybrid-fs"
-exports.version = "0.1.0"
+exports.version = "0.1.1"
 exports.dependencies = {
   "creationix/coro-fs",
 }
+exports.license = "MIT"
+exports.description = "A common filesystem subset that works inside or outside luvi bundles"
+exports.tags = {"fs", "bundle"}
+exports.author = { name = "Tim Caswell" }
+exports.homepage = "https://github.com/creationix/hybrid-fs/"
 
 local makeChroot = require('coro-fs').chroot
 local pathJoin = require('luvi').path.join
